@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="32" passed="32">
+  <reporter-output>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>googlechrome]]>
+    </line>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>firefox]]>
+    </line>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>firefox]]>
+    </line>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>googlechrome]]>
+    </line>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>googlechrome]]>
+    </line>
+    <line>
+      <![CDATA[Selected Browser to execute testcases--->>firefox]]>
+    </line>
+  </reporter-output>
+  <suite name="LoginTestSuite" duration-ms="138188" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:07:36Z">
+    <groups>
+    </groups>
+    <test name="VerifyLoginOnFirefox" duration-ms="138188" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:07:36Z">
+      <class name="com.photon.phresco.testcases.LoginTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="setUp" is-config="true" duration-ms="11688" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testEmptyLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testEmptyLogin" duration-ms="29281" started-at="2012-07-09T15:05:29Z" description="Validates the Login functionality with empty login" finished-at="2012-07-09T15:05:58Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testInvalidLogin" duration-ms="41188" started-at="2012-07-09T15:05:58Z" description="Validates the Login functionality with Invalid login credentials" finished-at="2012-07-09T15:06:40Z">
+        </test-method>
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testValidLogin" duration-ms="55953" started-at="2012-07-09T15:06:40Z" description="Validates the Login functionality with Valid login credentials" finished-at="2012-07-09T15:07:35Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="tearDown" is-config="true" duration-ms="78" started-at="2012-07-09T15:07:35Z" finished-at="2012-07-09T15:07:36Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="VerifyLoginOnChrome" duration-ms="24610" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:05:42Z">
+      <class name="com.photon.phresco.testcases.LoginTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="setUp" is-config="true" duration-ms="8891" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:05:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[googlechrome]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testEmptyLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testEmptyLogin" duration-ms="6047" started-at="2012-07-09T15:05:26Z" description="Validates the Login functionality with empty login" finished-at="2012-07-09T15:05:32Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testInvalidLogin" duration-ms="4922" started-at="2012-07-09T15:05:32Z" description="Validates the Login functionality with Invalid login credentials" finished-at="2012-07-09T15:05:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="testValidLogin" duration-ms="4734" started-at="2012-07-09T15:05:37Z" description="Validates the Login functionality with Valid login credentials" finished-at="2012-07-09T15:05:42Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.LoginTestCase)]" name="tearDown" is-config="true" duration-ms="16" started-at="2012-07-09T15:05:42Z" finished-at="2012-07-09T15:05:42Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="ProductCheckOutTestSuite" duration-ms="176312" started-at="2012-07-09T15:07:36Z" finished-at="2012-07-09T15:10:32Z">
+    <groups>
+    </groups>
+    <test name="VerifyProdChkOutOnFirefox" duration-ms="176312" started-at="2012-07-09T15:07:36Z" finished-at="2012-07-09T15:10:32Z">
+      <class name="com.photon.phresco.testcases.ProductsCheckOutTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="setUp" is-config="true" duration-ms="12047" started-at="2012-07-09T15:07:36Z" finished-at="2012-07-09T15:07:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testAccessoriesProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testAccessoriesProducts" duration-ms="23656" started-at="2012-07-09T15:07:48Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:11Z">
+        </test-method>
+        <test-method status="PASS" signature="testAudioDevicesProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testAudioDevicesProducts" duration-ms="20062" started-at="2012-07-09T15:08:11Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:31Z">
+        </test-method>
+        <test-method status="PASS" signature="testCameraAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testCameraAddcartProducts" duration-ms="17547" started-at="2012-07-09T15:08:31Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:49Z">
+        </test-method>
+        <test-method status="PASS" signature="testComputersAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testComputersAddcartProducts" duration-ms="28750" started-at="2012-07-09T15:08:49Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:09:18Z">
+        </test-method>
+        <test-method status="PASS" signature="testMP3PlayersAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMP3PlayersAddcartProducts" duration-ms="15797" started-at="2012-07-09T15:09:18Z" description="Checks the  different MP3PlayersAddcart products" finished-at="2012-07-09T15:09:33Z">
+        </test-method>
+        <test-method status="PASS" signature="testMobilesPhonesAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMobilesPhonesAddcartProducts" duration-ms="37891" started-at="2012-07-09T15:09:33Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:10:11Z">
+        </test-method>
+        <test-method status="PASS" signature="testMoviesMusicAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMoviesMusicAddcartProducts" duration-ms="13984" started-at="2012-07-09T15:10:11Z" description="Checks the  different MoviesMusicAddcart products" finished-at="2012-07-09T15:10:25Z">
+        </test-method>
+        <test-method status="PASS" signature="testTabletsAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testTabletsAddcartProducts" duration-ms="1344" started-at="2012-07-09T15:10:25Z" description="Checks the  different TabletsAddcart products" finished-at="2012-07-09T15:10:27Z">
+        </test-method>
+        <test-method status="PASS" signature="testTelevisionAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testTelevisionAddcartProducts" duration-ms="1781" started-at="2012-07-09T15:10:27Z" description="Checks the  different TelevisionAddcart products" finished-at="2012-07-09T15:10:28Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoGamesAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testVideoGamesAddcartProducts" duration-ms="1672" started-at="2012-07-09T15:10:28Z" description="Checks the  different VideoGamesAddcart products" finished-at="2012-07-09T15:10:30Z">
+        </test-method>
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-07-09T15:10:30Z" finished-at="2012-07-09T15:10:30Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 17:28:14'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 1.78 seconds
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 1341826416736]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 17:28:14'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 1.78 seconds
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 1341826416736
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at com.photon.phresco.Screens.BaseScreen.closeBrowser(BaseScreen.java:122)
+	at com.photon.phresco.testcases.ProductsCheckOutTestCase.tearDown(ProductsCheckOutTestCase.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 17:28:14'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.close(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:190)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:32)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:150)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="VerifyProdChkOutOnChrome" duration-ms="156375" started-at="2012-07-09T15:07:36Z" finished-at="2012-07-09T15:10:12Z">
+      <class name="com.photon.phresco.testcases.ProductsCheckOutTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="setUp" is-config="true" duration-ms="10703" started-at="2012-07-09T15:07:36Z" finished-at="2012-07-09T15:07:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[googlechrome]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testAccessoriesProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testAccessoriesProducts" duration-ms="21344" started-at="2012-07-09T15:07:46Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testAudioDevicesProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testAudioDevicesProducts" duration-ms="17938" started-at="2012-07-09T15:08:08Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:26Z">
+        </test-method>
+        <test-method status="PASS" signature="testCameraAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testCameraAddcartProducts" duration-ms="16672" started-at="2012-07-09T15:08:26Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:42Z">
+        </test-method>
+        <test-method status="PASS" signature="testComputersAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testComputersAddcartProducts" duration-ms="14718" started-at="2012-07-09T15:08:42Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:08:57Z">
+        </test-method>
+        <test-method status="PASS" signature="testMP3PlayersAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMP3PlayersAddcartProducts" duration-ms="14141" started-at="2012-07-09T15:08:57Z" description="Checks the  different MP3PlayersAddcart products" finished-at="2012-07-09T15:09:11Z">
+        </test-method>
+        <test-method status="PASS" signature="testMobilesPhonesAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMobilesPhonesAddcartProducts" duration-ms="13344" started-at="2012-07-09T15:09:11Z" description="Select and checksout Accessories products" finished-at="2012-07-09T15:09:24Z">
+        </test-method>
+        <test-method status="PASS" signature="testMoviesMusicAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testMoviesMusicAddcartProducts" duration-ms="12297" started-at="2012-07-09T15:09:24Z" description="Checks the  different MoviesMusicAddcart products" finished-at="2012-07-09T15:09:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testTabletsAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testTabletsAddcartProducts" duration-ms="11843" started-at="2012-07-09T15:09:37Z" description="Checks the  different TabletsAddcart products" finished-at="2012-07-09T15:09:49Z">
+        </test-method>
+        <test-method status="PASS" signature="testTelevisionAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testTelevisionAddcartProducts" duration-ms="11750" started-at="2012-07-09T15:09:49Z" description="Checks the  different TelevisionAddcart products" finished-at="2012-07-09T15:10:00Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoGamesAddcartProducts()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="testVideoGamesAddcartProducts" duration-ms="11594" started-at="2012-07-09T15:10:00Z" description="Checks the  different VideoGamesAddcart products" finished-at="2012-07-09T15:10:12Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.ProductsCheckOutTestCase)]" name="tearDown" is-config="true" duration-ms="16" started-at="2012-07-09T15:10:12Z" finished-at="2012-07-09T15:10:12Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="RegistrationTestSuite" duration-ms="50703" started-at="2012-07-09T15:04:27Z" finished-at="2012-07-09T15:05:17Z">
+    <groups>
+    </groups>
+    <test name="VerifyRegistrationOnChrome" duration-ms="40750" started-at="2012-07-09T15:04:27Z" finished-at="2012-07-09T15:05:07Z">
+      <class name="com.photon.phresco.testcases.RegistrationTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="setUp" is-config="true" duration-ms="26000" started-at="2012-07-09T15:04:27Z" finished-at="2012-07-09T15:04:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[googlechrome]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testEmptyRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testEmptyRegistration" duration-ms="8485" started-at="2012-07-09T15:04:53Z" description="Validates the Registration functionality with empty Registration inputs" finished-at="2012-07-09T15:05:01Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvalidRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testInvalidRegistration" duration-ms="3500" started-at="2012-07-09T15:05:01Z" description="Validates the Registration functionality with Invalid Registration inputs" finished-at="2012-07-09T15:05:05Z">
+        </test-method>
+        <test-method status="PASS" signature="testValidRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testValidRegistration" duration-ms="2734" started-at="2012-07-09T15:05:05Z" description="Validates the Registration functionality with Valid Registration inputs" finished-at="2012-07-09T15:05:07Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="tearDown" is-config="true" duration-ms="16" started-at="2012-07-09T15:05:07Z" finished-at="2012-07-09T15:05:07Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="VerifyRegistrationOnFirefox" duration-ms="50703" started-at="2012-07-09T15:04:27Z" finished-at="2012-07-09T15:05:17Z">
+      <class name="com.photon.phresco.testcases.RegistrationTestCase">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="setUp" is-config="true" duration-ms="23360" started-at="2012-07-09T15:04:27Z" finished-at="2012-07-09T15:04:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testEmptyRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testEmptyRegistration" duration-ms="8703" started-at="2012-07-09T15:04:50Z" description="Validates the Registration functionality with empty Registration inputs" finished-at="2012-07-09T15:04:59Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvalidRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testInvalidRegistration" duration-ms="13078" started-at="2012-07-09T15:04:59Z" description="Validates the Registration functionality with Invalid Registration inputs" finished-at="2012-07-09T15:05:12Z">
+        </test-method>
+        <test-method status="PASS" signature="testValidRegistration()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="testValidRegistration" duration-ms="5484" started-at="2012-07-09T15:05:12Z" description="Validates the Registration functionality with Valid Registration inputs" finished-at="2012-07-09T15:05:17Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(com.photon.phresco.testcases.RegistrationTestCase)]" name="tearDown" is-config="true" duration-ms="63" started-at="2012-07-09T15:05:17Z" finished-at="2012-07-09T15:05:17Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="AllTest" duration-ms="0" started-at="2012-07-09T15:10:34Z" finished-at="2012-07-09T15:10:34Z">
+    <groups>
+    </groups>
+  </suite>
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ProductCheckOutTestSuite"  parallel="tests" thread-count="5" verbose="3" > 
+<test name="VerifyProdChkOutOnFirefox" junit="false" preserve-order="true"> 
+ <parameter name="browser" value="firefox"/>
+ <classes> 
+    <class name="com.photon.phresco.testcases.ProductsCheckOutTestCase"/>  
+  </classes>
+</test>     
+<test name="VerifyProdChkOutOnChrome" junit="false" preserve-order="true"> 
+ <parameter name="browser" value="googlechrome"/>
+ <classes> 
+    <class name="com.photon.phresco.testcases.ProductsCheckOutTestCase"/>  
+  </classes>
+</test>      
+</suite>
+ 
+
+ 	
+ 

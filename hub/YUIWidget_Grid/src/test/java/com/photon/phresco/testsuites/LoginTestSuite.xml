@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LoginTestSuite"  parallel="tests" thread-count="5" verbose="3" >
+	<test name="VerifyLoginOnFirefox" junit="false" preserve-order="true">  
+	 	<parameter name="browser" value="firefox"/> 
+	 	
+	 	<classes>
+	  		<class name="com.photon.phresco.testcases.LoginTestCase"/>  
+	 	</classes>
+	</test> 
+
+	<test name="VerifyLoginOnChrome" junit="false" preserve-order="true">  
+	  	<parameter name="browser" value="googlechrome"/> 
+	
+	 	<classes>
+	  		<class name="com.photon.phresco.testcases.LoginTestCase"/>  
+	 	</classes>
+	</test>        
+</suite>
+ 
+
+ 	
+ 

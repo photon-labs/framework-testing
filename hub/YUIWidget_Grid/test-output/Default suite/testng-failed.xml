@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.photon.phresco.testcases.ProductsCheckOutTestCase">
+        <methods>
+          <include name="testMP3PlayersAddcartProducts"/>
+          <include name="testMobilesPhonesAddcartProducts"/>
+          <include name="testComputersAddcartProducts"/>
+          <include name="testAudioDevicesProducts"/>
+          <include name="testVideoGamesAddcartProducts"/>
+          <include name="testTabletsAddcartProducts"/>
+          <include name="testMoviesMusicAddcartProducts"/>
+          <include name="testTelevisionAddcartProducts"/>
+          <include name="testAccessoriesProducts"/>
+          <include name="testCameraAddcartProducts"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegistrationTestSuite"  parallel="tests" thread-count="5" verbose="3" > 
+<test name="VerifyRegistrationOnFirefox" junit="false" preserve-order="true"> 
+ <parameter name="browser" value="firefox"/>
+ <classes> 
+    <class name="com.photon.phresco.testcases.RegistrationTestCase"/>  
+  </classes>
+</test>  
+<test name="VerifyRegistrationOnChrome" junit="false" preserve-order="true"> 
+ <parameter name="browser" value="googlechrome"/>
+ <classes> 
+    <class name="com.photon.phresco.testcases.RegistrationTestCase"/>  
+ </classes>
+</test>       
+</suite>
+ 
+
+ 	
+ 

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><th colspan="7">LoginTestSuite</th></tr>
+<tr><td style="text-align:left;padding-right:2em">VerifyLoginOnFirefox</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">138.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">VerifyLoginOnChrome</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="7">ProductCheckOutTestSuite</th></tr>
+<tr><td style="text-align:left;padding-right:2em">VerifyProdChkOutOnFirefox</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">176.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">VerifyProdChkOutOnChrome</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">156.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="7">RegistrationTestSuite</th></tr>
+<tr><td style="text-align:left;padding-right:2em">VerifyRegistrationOnChrome</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">40.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">VerifyRegistrationOnFirefox</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">50.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="7">AllTest</th></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">32</td><td class="numi">32</td><td class="numi">0</td><td class="numi">0</td><td class="numi">365.3 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">LoginTestSuite</th></tr>
+<tr><th colspan="4">VerifyLoginOnFirefox &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.photon.phresco.testcases.LoginTestCase<td><a href="#m1"><b>testEmptyLogin</b>  ("Validates the Login functionality with empty login")</a></td><td class="numi">1</td><td>1341826529531</td><td class="numi">29281</td></tr><tr class="passedodd"><td><a href="#m2"><b>testInvalidLogin</b>  ("Validates the Login functionality with Invalid login credentials")</a></td><td class="numi">1</td><td>1341826558812</td><td class="numi">41188</td></tr><tr class="passedodd"><td><a href="#m3"><b>testValidLogin</b>  ("Validates the Login functionality with Valid login credentials")</a></td><td class="numi">1</td><td>1341826600000</td><td class="numi">55953</td></tr>
+<tr><th colspan="4">VerifyLoginOnChrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.photon.phresco.testcases.LoginTestCase<td><a href="#m4"><b>testEmptyLogin</b>  ("Validates the Login functionality with empty login")</a></td><td class="numi">1</td><td>1341826526734</td><td class="numi">6047</td></tr><tr class="passedodd"><td><a href="#m5"><b>testInvalidLogin</b>  ("Validates the Login functionality with Invalid login credentials")</a></td><td class="numi">1</td><td>1341826532781</td><td class="numi">4922</td></tr><tr class="passedodd"><td><a href="#m6"><b>testValidLogin</b>  ("Validates the Login functionality with Valid login credentials")</a></td><td class="numi">1</td><td>1341826537703</td><td class="numi">4734</td></tr>
+<tr><th colspan="4">ProductCheckOutTestSuite</th></tr>
+<tr><th colspan="4">VerifyProdChkOutOnFirefox &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.photon.phresco.testcases.ProductsCheckOutTestCase<td><a href="#m7"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1341826830609</td><td class="numi">0</td></tr>
+<tr><th colspan="4">VerifyProdChkOutOnFirefox &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">com.photon.phresco.testcases.ProductsCheckOutTestCase<td><a href="#m8"><b>testAccessoriesProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826668125</td><td class="numi">23656</td></tr><tr class="passedodd"><td><a href="#m9"><b>testAudioDevicesProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826691781</td><td class="numi">20062</td></tr><tr class="passedodd"><td><a href="#m10"><b>testCameraAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826711843</td><td class="numi">17547</td></tr><tr class="passedodd"><td><a href="#m11"><b>testComputersAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826729390</td><td class="numi">28750</td></tr><tr class="passedodd"><td><a href="#m12"><b>testMP3PlayersAddcartProducts</b>  ("Checks the  different MP3PlayersAddcart products")</a></td><td class="numi">1</td><td>1341826758140</td><td class="numi">15797</td></tr><tr class="passedodd"><td><a href="#m13"><b>testMobilesPhonesAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826773937</td><td class="numi">37891</td></tr><tr class="passedodd"><td><a href="#m14"><b>testMoviesMusicAddcartProducts</b>  ("Checks the  different MoviesMusicAddcart products")</a></td><td class="numi">1</td><td>1341826811828</td><td class="numi">13984</td></tr><tr class="passedodd"><td><a href="#m15"><b>testTabletsAddcartProducts</b>  ("Checks the  different TabletsAddcart products")</a></td><td class="numi">1</td><td>1341826825812</td><td class="numi">1344</td></tr><tr class="passedodd"><td><a href="#m16"><b>testTelevisionAddcartProducts</b>  ("Checks the  different TelevisionAddcart products")</a></td><td class="numi">1</td><td>1341826827156</td><td class="numi">1781</td></tr><tr class="passedodd"><td><a href="#m17"><b>testVideoGamesAddcartProducts</b>  ("Checks the  different VideoGamesAddcart products")</a></td><td class="numi">1</td><td>1341826828937</td><td class="numi">1672</td></tr>
+<tr><th colspan="4">VerifyProdChkOutOnChrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">com.photon.phresco.testcases.ProductsCheckOutTestCase<td><a href="#m18"><b>testAccessoriesProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826666796</td><td class="numi">21344</td></tr><tr class="passedodd"><td><a href="#m19"><b>testAudioDevicesProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826688140</td><td class="numi">17938</td></tr><tr class="passedodd"><td><a href="#m20"><b>testCameraAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826706078</td><td class="numi">16672</td></tr><tr class="passedodd"><td><a href="#m21"><b>testComputersAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826722750</td><td class="numi">14718</td></tr><tr class="passedodd"><td><a href="#m22"><b>testMP3PlayersAddcartProducts</b>  ("Checks the  different MP3PlayersAddcart products")</a></td><td class="numi">1</td><td>1341826737468</td><td class="numi">14141</td></tr><tr class="passedodd"><td><a href="#m23"><b>testMobilesPhonesAddcartProducts</b>  ("Select and checksout Accessories products")</a></td><td class="numi">1</td><td>1341826751609</td><td class="numi">13344</td></tr><tr class="passedodd"><td><a href="#m24"><b>testMoviesMusicAddcartProducts</b>  ("Checks the  different MoviesMusicAddcart products")</a></td><td class="numi">1</td><td>1341826764953</td><td class="numi">12297</td></tr><tr class="passedodd"><td><a href="#m25"><b>testTabletsAddcartProducts</b>  ("Checks the  different TabletsAddcart products")</a></td><td class="numi">1</td><td>1341826777250</td><td class="numi">11843</td></tr><tr class="passedodd"><td><a href="#m26"><b>testTelevisionAddcartProducts</b>  ("Checks the  different TelevisionAddcart products")</a></td><td class="numi">1</td><td>1341826789093</td><td class="numi">11750</td></tr><tr class="passedodd"><td><a href="#m27"><b>testVideoGamesAddcartProducts</b>  ("Checks the  different VideoGamesAddcart products")</a></td><td class="numi">1</td><td>1341826800843</td><td class="numi">11594</td></tr>
+<tr><th colspan="4">RegistrationTestSuite</th></tr>
+<tr><th colspan="4">VerifyRegistrationOnChrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.photon.phresco.testcases.RegistrationTestCase<td><a href="#m28"><b>testEmptyRegistration</b>  ("Validates the Registration functionality with empty Registration inputs")</a></td><td class="numi">1</td><td>1341826493140</td><td class="numi">8485</td></tr><tr class="passedodd"><td><a href="#m29"><b>testInvalidRegistration</b>  ("Validates the Registration functionality with Invalid Registration inputs")</a></td><td class="numi">1</td><td>1341826501625</td><td class="numi">3500</td></tr><tr class="passedodd"><td><a href="#m30"><b>testValidRegistration</b>  ("Validates the Registration functionality with Valid Registration inputs")</a></td><td class="numi">1</td><td>1341826505125</td><td class="numi">2734</td></tr>
+<tr><th colspan="4">VerifyRegistrationOnFirefox &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.photon.phresco.testcases.RegistrationTestCase<td><a href="#m31"><b>testEmptyRegistration</b>  ("Validates the Registration functionality with empty Registration inputs")</a></td><td class="numi">1</td><td>1341826490500</td><td class="numi">8703</td></tr><tr class="passedodd"><td><a href="#m32"><b>testInvalidRegistration</b>  ("Validates the Registration functionality with Invalid Registration inputs")</a></td><td class="numi">1</td><td>1341826499203</td><td class="numi">13078</td></tr><tr class="passedodd"><td><a href="#m33"><b>testValidRegistration</b>  ("Validates the Registration functionality with Valid Registration inputs")</a></td><td class="numi">1</td><td>1341826512281</td><td class="numi">5484</td></tr>
+<tr><th colspan="4">AllTest</th></tr>
+</table>
+<h1>VerifyLoginOnFirefox</h1>
+<a id="m1"></a><h2>com.photon.phresco.testcases.LoginTestCase:testValidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.photon.phresco.testcases.LoginTestCase:testEmptyLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.photon.phresco.testcases.LoginTestCase:testInvalidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>VerifyLoginOnChrome</h1>
+<a id="m4"></a><h2>com.photon.phresco.testcases.LoginTestCase:testValidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.photon.phresco.testcases.LoginTestCase:testInvalidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.photon.phresco.testcases.LoginTestCase:testEmptyLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>VerifyProdChkOutOnFirefox</h1>
+<a id="m7"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:tearDown</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 1.78 seconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 15:28:49&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 1341826416736</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+<br/>at com.photon.phresco.Screens.BaseScreen.closeBrowser(BaseScreen.java:122)
+<br/>at com.photon.phresco.testcases.ProductsCheckOutTestCase.tearDown(ProductsCheckOutTestCase.java:217)
+<br/>18 lines not shown
+<p>Caused by Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 15:28:49&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at $Proxy1.close(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:190)
+<br/>at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:32)
+<br/>at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:150)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testAudioDevicesProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testComputersAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMoviesMusicAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testVideoGamesAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testTabletsAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testCameraAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMobilesPhonesAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMP3PlayersAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testAccessoriesProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testTelevisionAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>VerifyProdChkOutOnChrome</h1>
+<a id="m18"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testAudioDevicesProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testCameraAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMP3PlayersAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testTabletsAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMobilesPhonesAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testTelevisionAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testVideoGamesAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testMoviesMusicAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testAccessoriesProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>com.photon.phresco.testcases.ProductsCheckOutTestCase:testComputersAddcartProducts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>VerifyRegistrationOnChrome</h1>
+<a id="m28"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testValidRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testInvalidRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testEmptyRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>VerifyRegistrationOnFirefox</h1>
+<a id="m31"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testValidRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testEmptyRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>com.photon.phresco.testcases.RegistrationTestCase:testInvalidRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

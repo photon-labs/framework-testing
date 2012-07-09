@@ -1,0 +1,228 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.photon.phresco</groupId>
+  <artifactId>Html5yui</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>Html5yui</name>
+  <url>http://maven.apache.org</url>
+  
+  <repositories>
+    <repository>      
+      <id>seleniumserver</id>
+      <name>seleniumserver</name>
+      <url>http://172.16.18.178:8080/nexus/content/groups/public/</url>
+    </repository>
+  </repositories>	
+  
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<!-- <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency> -->
+		          <dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.5.2</version>
+     <scope>test</scope>
+</dependency>
+		 <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.24.1</version>
+		</dependency>
+        
+    <!--  ***************For Windows chromedriver ******************-->    
+     
+	<!-- **************** For Mac machine chromedriver***************** -->   
+		
+    <!-- **************** For Linux-32 machine chromedriver***************** -->     
+      
+	 <!-- **************** For Linux-64 machine chromedriver***************** -->     	
+	
+		<!--<dependency> <groupId>org.testng</groupId> <artifactId>testng</artifactId> 
+			<version>6.2</version> </dependency> -->
+	</dependencies>
+	 <pluginRepositories>
+    <pluginRepository>
+    <id>testng-xslt-plugin</id>
+ <url>http://www.cosminaru.ro/maven/</url>
+    </pluginRepository>
+         </pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+		          <execution>
+		            <phase>test</phase>
+		            <goals>
+		              <goal>site</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<id>unpack</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<markersDirectory>target/test/chromedriver</markersDirectory>
+						<artifactItems>
+								<artifactItem>
+										 	  <groupId>org.seleniumhq.selenium</groupId>
+											   <artifactId>chromedriver</artifactId>
+											   <version>19.0.1068.0</version>
+											   <classifier>win</classifier>
+											   <type>zip</type>
+											   <overWrite>false</overWrite>
+											   <outputDirectory>target/test/chromedriver/windows</outputDirectory>
+								  </artifactItem>
+								  <artifactItem>
+								                 <groupId>org.seleniumhq.selenium</groupId>
+												  <artifactId>chromedriver</artifactId>
+												  <version>19.0.1068.0</version>
+												  <classifier>mac</classifier>
+												  <type>zip</type>
+												  <overWrite>false</overWrite>
+											      <outputDirectory>target/test/chromedriver/mac</outputDirectory>
+								</artifactItem>	
+								<artifactItem>
+											  <groupId>org.seleniumhq.selenium</groupId>
+											  <artifactId>chromedriver</artifactId>
+											  <version>19.0.1068.0</version>
+											  <classifier>linux32</classifier>
+											  <type>zip</type>
+											  <overWrite>false</overWrite>
+											  <outputDirectory>target/test/chromedriver/linux-32</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+											  <groupId>org.seleniumhq.selenium</groupId>
+											  <artifactId>chromedriver</artifactId>
+											  <version>19.0.1068.0</version>
+											  <classifier>linux64</classifier>
+											  <type>zip</type>
+											  <overWrite>false</overWrite>
+											  <outputDirectory>target/test/chromedriver/linux-64</outputDirectory>
+								</artifactItem>
+						</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			 <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-antrun-plugin</artifactId>
+      <executions>
+        <execution>
+          <phase>pre-integration-test</phase>
+          <configuration>
+            <tasks>
+              <java classname="org.openqa.grid.selenium.GridLauncher"
+               classpathref="maven.compile.classpath"
+               failonerror="true"
+               fork="1">
+                <arg line="-role hub"/>
+              </java>
+              <java classname="com.photon.phresco.testcases.GridLauncher"
+               classpathref="maven.compile.classpath"
+               failonerror="true"
+               fork="1">
+                <arg line="-role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser 'browserName=firefox,maxInstances=5'"/>
+              </java>
+            </tasks>
+          </configuration>
+          <goals>
+            <goal>run</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+		<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <configuration>
+      <parallel>classes</parallel>
+    </configuration>
+  </plugin>
+		 <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+     <version>2.12</version>
+   <configuration>
+   <!-- <suitethreadpoolsize>2</suitethreadpoolsize>
+   <parallel>tests</parallel>
+        <threadCount>2</threadCount> -->
+      <suiteXmlFiles>
+     <suiteXmlFile>./src/test/java/com/photon/phresco/testsuites/AllTest.xml</suiteXmlFile>
+      </suiteXmlFiles>
+ <testFailureIgnore>true</testFailureIgnore>
+ </configuration>
+        </plugin>
+			 <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.8</version>	
+				<executions>
+		          <execution>
+		            <phase>test</phase>
+		         	   <goals>
+		              <goal>report</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin> 
+			</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+        <groupId>org.testng.xslt</groupId>
+          <artifactId>testng-xslt-plugin</artifactId>
+                            <version>1.1</version>
+                <configuration>
+      <surefireReportDirectory>target/surefire/output/dir</surefireReportDirectory>
+              </configuration>
+          </plugin>		
+			<!-- 	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.8</version>				
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>				
+			</plugin> -->
+		</plugins>
+	</reporting>
+</project>

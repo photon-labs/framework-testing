@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Phresco Suite"  parallel="tests" thread-count="5" verbose="3" >
+ <test name="Run on Firefox1" junit="false" preserve-order="true">
+     
+  <parameter name="browser" value="googlechrome"/> 
+ <classes>
+  <class name="com.photon.phresco.testcases.ProductsTestSuite"/> 
+  
+  <!--  <class name="com.photon.phresco.testcases.AudioDevicesAddcart"/> 
+   <class name="com.photon.phresco.testcases.CamerasAddcart"/> 
+    <class name="com.photon.phresco.testcases.ComputersAddcart"/> 
+   <class name="com.photon.phresco.testcases.MobilePhonesAddcart"/> 
+  <class name="com.photon.phresco.testcases.MoviesnMusicAddcart"/> 
+  <class name="com.photon.phresco.testcases.MP3PlayersAddcart"/> 
+  <class name="com.photon.phresco.testcases.TabletsAddCart"/> 
+  <class name="com.photon.phresco.testcases.TeleVisionAddcart"/> 
+  <class name="com.photon.phresco.testcases.VideoGamesAddcart"/> 
+  <class name="com.photon.phresco.testcases.WelcomePage"/>    - -->
+ </classes>
+ </test>  
+  <test name="Run on Firefox2" junit="false" preserve-order="true"> 
+ <parameter name="browser" value="firefox"/>
+ <classes> 
+    <class name="com.photon.phresco.testcases.ProductsTestSuite"/>  
+   <!-- <class name="com.photon.phresco.testcases.AudioDevicesAddcart"/>  
+  <class name="com.photon.phresco.testcases.CamerasAddcart"/> 
+  <class name="com.photon.phresco.testcases.ComputersAddcart"/> 
+  <class name="com.photon.phresco.testcases.MobilePhonesAddcart"/> 
+  <class name="com.photon.phresco.testcases.MoviesnMusicAddcart"/> 
+   <class name="com.photon.phresco.testcases.MP3PlayersAddcart"/> 
+  <class name="com.photon.phresco.testcases.TabletsAddCart"/> 
+  <class name="com.photon.phresco.testcases.TeleVisionAddcart"/> 
+  <class name="com.photon.phresco.testcases.VideoGamesAddcart"/> 
+  <class name="com.photon.phresco.testcases.WelcomePage"/>  -->
+  </classes>
+</test>     
+</suite>
+ 
+
+ 	
+ 

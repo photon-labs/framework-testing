@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment>
+    
+   <tabs>
+	           <hometab>//a[contains(text(),'Products')]</hometab>
+	           <televisiontab>//a[contains(text(),'Television')]</televisiontab>
+	           <computerstab>//a[contains(text(),'Computers')]</computerstab>
+	           <mobiletab>//a[contains(text(),'Mobile Phones')]</mobiletab>
+	           <audioDevicestab>//a[contains(text(),'Audio Devices')]</audioDevicestab>
+	           <camerastab>//a[contains(text(),'Cameras')]</camerastab>
+	           <tabletstab>//a[contains(text(),'Tablets')]</tabletstab>
+	           <moviesNmusictab>//a[contains(text(),'Movies and Music')]</moviesNmusictab>
+	           <videoGamestab>//a[contains(text(),'Video Games')]</videoGamestab>
+	           <mp3Playerstab>//a[contains(text(),'MP3 Players')]</mp3Playerstab>
+	           <accessoriestab>//a[contains(text(),'Accessories')]</accessoriestab>
+	           <moretab>//a[contains(text(),'More')]</moretab>
+	           <logintab>//a[contains(text(),'Login')]</logintab>
+	           <signuptab>//a[contains(text(),'Sign up')]</signuptab>
+	       </tabs>
+	       <loginPage>
+	           <emailxpath>//input[@id='logEmail']</emailxpath>
+	           <passwordxpath>//input[@id='logpassword']</passwordxpath>
+	           <emailvalue>Phresco@PhotonInfotech.net</emailvalue>
+	           <passwordvalue>phresco123</passwordvalue>
+	           <invalidemailvalue>Unregistered@PhotonInfotech.net</invalidemailvalue>
+	           <invalidpasswordvalue>unreg123</invalidpasswordvalue>
+	           <submitxpath>//input[@id='ok']</submitxpath>
+	           <loginSuccessmsg>Status : Login Success</loginSuccessmsg>
+	           <loginFailuremsg>Status : Login failed</loginFailuremsg>
+	           <emptyEmailAlert>Please enter Email</emptyEmailAlert>
+	       </loginPage>
+	       <signupPage>
+               <regFirstName>//input[@id='regfirstname']</regFirstName>
+	           <regLastName>//input[@id='reglastname']</regLastName>
+	           <regEmail>//input[@id='regemail']</regEmail>
+	           <regPassword>//input[@id='regpassword']</regPassword>
+	           <regPhoneNumber>//input[@id='regphonenumber']</regPhoneNumber>
+	           <regFirstNameValue>John</regFirstNameValue>
+	           <regLastNameValue>David</regLastNameValue>
+	           <regEmailValue>Phresco@PhotonInfotech.net</regEmailValue>
+	           <regPasswordValue>phresco123</regPasswordValue>
+	           <regPhoneNumberValue>+1 212-398-2449</regPhoneNumberValue>
+	           <regSuccessMessage>Registration Status : Success</regSuccessMessage>
+	           <submitxpath>//input[@id='ok']</submitxpath>
+	       </signupPage>
+	       <productPage>
+	           <prod1Details>//div[@class='info']//a</prod1Details>
+	           <updateCart>//input[@value='Update Cart']</updateCart>
+	           <addToCart>link=Add to cart</addToCart>
+	           <prod1DetailAddToCart>//a[contains(text(),'Add to cart')]</prod1DetailAddToCart>
+	           <prod1AudioDevices>//div[@id='left']/ul/li/div/a/img</prod1AudioDevices>
+	           <checkout>//input[@value='Check Out']</checkout>
+	           <reviewOrder>//input[@value='Review Order']</reviewOrder>
+	           <submitOrder>//input[@value='Submit Order']</submitOrder>
+	       </productPage>
+	       <billingInfoPage>
+	           <billInfoEmail>//input[@id='email']</billInfoEmail>
+	           <billInfoEmailValue>Phresco@PhotonInfotech.net</billInfoEmailValue>
+	           <billInfoFirstName>firstName</billInfoFirstName>
+	           <billInfoFirstNameValue>John</billInfoFirstNameValue>
+	           <billInfoLastName>lastName</billInfoLastName>
+	           <billInfoLastNameValue>David</billInfoLastNameValue>
+	           <billInfoCompany>company</billInfoCompany>
+	           <billInfoCompanyValue>Photon</billInfoCompanyValue>
+	           <billInfoAddress1>address1</billInfoAddress1>
+	           <billInfoAddress1Value>USA</billInfoAddress1Value>
+	           <billInfoAddress2>address2</billInfoAddress2>
+	           <billInfoAddress2Value>Newyork</billInfoAddress2Value>
+	           <billInfoCity>city</billInfoCity>
+	           <billInfoCityValue>NewJersey city</billInfoCityValue>
+	           <billInfoState>state</billInfoState>
+	           <billInfoStateValue>Boston</billInfoStateValue>
+	           <billInfoPostCode>postCode</billInfoPostCode>
+	           <billInfoPostCodeValue>10019</billInfoPostCodeValue>
+	           <billInfoPhoneNumber>phoneNumber</billInfoPhoneNumber>
+	           <billInfoPhoneNumberValue>+1 212-398-2449</billInfoPhoneNumberValue>
+	           <billInfoComments>//textarea[@name='comments']</billInfoComments>
+	           <billInfoCommentsValue>First order</billInfoCommentsValue>
+	       </billingInfoPage>
+	       <cardInfoPage>
+	           <cardInfoCardType>//form[@id='contact']/div[4]/fieldset/div/div/label[2]/input</cardInfoCardType>
+	           <cardInfoCardNumber>cardNumber</cardInfoCardNumber>
+	           <cardInfoCardNumberValue>235967841</cardInfoCardNumberValue>
+	           <cardInfoSecurityNumber>securityNumber</cardInfoSecurityNumber>
+	           <cardInfoSecurityNumberValue>5836</cardInfoSecurityNumberValue>
+	           <cardInfoNameOnCard>nameOnCard</cardInfoNameOnCard>
+	           <cardInfoNameOnCardValue>JohnDavid</cardInfoNameOnCardValue>
+	       </cardInfoPage>     
+</environment>

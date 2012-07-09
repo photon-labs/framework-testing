@@ -1,0 +1,261 @@
+<html>
+<head>
+<title>TestNG:  VerifyProdChkOutOnFirefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>VerifyProdChkOutOnFirefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 09 15:14:43 IST 2012</td>
+</tr>
+<tr><td>Total time:</td><td>286 seconds (286610 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.tearDown()'><b>tearDown</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 1.74 seconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 15:28:49&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 1341826944142
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at com.photon.phresco.Screens.BaseScreen.closeBrowser(BaseScreen.java:122)
+	at com.photon.phresco.testcases.ProductsCheckOutTestCase.tearDown(ProductsCheckOutTestCase.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 17:28:14&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 15:28:49&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.6.0_27&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.close(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:190)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:32)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:150)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace32708178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32708178'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 17:28:14'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 1.74 seconds
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 1341826944142
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at com.photon.phresco.Screens.BaseScreen.closeBrowser(BaseScreen.java:122)
+	at com.photon.phresco.testcases.ProductsCheckOutTestCase.tearDown(ProductsCheckOutTestCase.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 17:28:14'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_27'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:476)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.close(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:190)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:32)
+	at org.openqa.selenium.remote.server.handler.CloseWindow.call(CloseWindow.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:150)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testAccessoriesProducts()'><b>testAccessoriesProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Select and checksout Accessories products</td>
+<td></td>
+<td>85</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testAudioDevicesProducts()'><b>testAudioDevicesProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Select and checksout Accessories products</td>
+<td></td>
+<td>38</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testCameraAddcartProducts()'><b>testCameraAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Select and checksout Accessories products</td>
+<td></td>
+<td>18</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testComputersAddcartProducts()'><b>testComputersAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Select and checksout Accessories products</td>
+<td></td>
+<td>17</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testMP3PlayersAddcartProducts()'><b>testMP3PlayersAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Checks the  different MP3PlayersAddcart products</td>
+<td></td>
+<td>15</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testMobilesPhonesAddcartProducts()'><b>testMobilesPhonesAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Select and checksout Accessories products</td>
+<td></td>
+<td>17</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testMoviesMusicAddcartProducts()'><b>testMoviesMusicAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Checks the  different MoviesMusicAddcart products</td>
+<td></td>
+<td>16</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testTabletsAddcartProducts()'><b>testTabletsAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Checks the  different TabletsAddcart products</td>
+<td></td>
+<td>17</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testTelevisionAddcartProducts()'><b>testTelevisionAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Checks the  different TelevisionAddcart products</td>
+<td></td>
+<td>44</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+<tr>
+<td title='com.photon.phresco.testcases.ProductsCheckOutTestCase.testVideoGamesAddcartProducts()'><b>testVideoGamesAddcartProducts</b><br>Test class: com.photon.phresco.testcases.ProductsCheckOutTestCase<br>Test method: Checks the  different VideoGamesAddcart products</td>
+<td></td>
+<td>1</td>
+<td>null(com.photon.phresco.testcases.ProductsCheckOutTestCase)</td></tr>
+</table><p>
+</body>
+</html>
